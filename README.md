@@ -74,47 +74,4 @@ Thanh Le
 HTML / CSS / JavaScript / GitHub
 
 > status
-Learning and building everyday 🚀<img src="https://skillicons.dev/icons?i=html,css,js,github,vscode,linux,git,nodejs" />
-</p>
-
----
-
-<!-- ===== GITHUB STATS ===== -->
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=pussyzz&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-<!-- ===== STREAK ===== -->
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=pussyzz&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-<!-- ===== TOP LANGUAGES ===== -->
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pussyzz&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-<!-- ===== ACTIVITY GRAPH (UPDATE DAILY) ===== -->
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=pussyzz&theme=tokyo-night&hide_border=true" />
-</p>
-
----
-
-<!-- ===== TROPHIES ===== -->
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=pussyzz&theme=tokyonight&no-frame=true&row=1" />
-</p>
-
----
-
-<!-- ===== SNAKE ANIMATION ===== -->
-<p align="center">
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
-</p>
+Learning and building everyday 🚀
