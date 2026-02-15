@@ -3,7 +3,7 @@
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" width="100%">
 </p>
 
-<h1 align="center">Hi 👋 I'm Thanh Le</h1>
+<h1 align="center">Hi 👋 I'm 𝕋𝕙𝕒𝕟𝕙 𝕃𝕖 </h1>
 
 ---
 
