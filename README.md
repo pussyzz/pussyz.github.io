@@ -5,11 +5,6 @@
 
 <h1 align="center">Hi 👋 I'm Thanh Le</h1>
 
-<!-- ================= TYPING TEXT ================= -->
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub;Learning+Web+Development;Coding+Everyday;Always+Improving+🔥">
-</p>
-
 ---
 
 <!-- ================= VISITOR COUNTER ================= -->
@@ -24,13 +19,6 @@
 
 <p align="center">
 <img src="https://skillicons.dev/icons?i=html,css,js,github,vscode,linux,git,nodejs" />
-</p>
-
----
-
-<!-- ================= GITHUB STATS ================= -->
-<p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=pussyzz&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
 </p>
 
 ---
