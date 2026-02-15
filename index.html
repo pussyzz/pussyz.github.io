@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+            <link rel="preload" as="image" href="https://cdn.discordapp.com/avatars/1010789381533073468/ad967decdf898a0b77b6def9487f158a">
+                <link rel="preload" as="image" href=".\template\img\offline.png">
+                        <link rel="preload" as="image" href="https://r2.zyo.lol/cursor_url_d5fd12c82d4c.png">
+         
+    <link rel="stylesheet" href="./template/css/bio.css?ver=786592188">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="template/css/tippy_scale.css" />
+    <link rel="stylesheet" href="template/css/nouislider.min.css" />
+    <link rel="stylesheet" href="template/css/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="template/css/iziToast.min.css" />
+    <link rel="icon" type="image/x-icon" href="template/img/logo.ico">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="description" content="developerlor">
+    <meta name="author" content="developerlor">
+    <meta property="og:title" content="developerlor">
+    <meta property="og:description" content=dev">
+    <meta property="og:image" content="https://i.ibb.co/yGs97X4/chill-4k-aesthetic-art-pxnxqcy7x64sn31r-Nero-AI-Image-Upscaler-Photo-Face.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="developerlor">
+    <meta name="twitter:description" content="developerlor">
+    <meta name="twitter:image" content="https://i.ibb.co/yGs97X4/chill-4k-aesthetic-art-pxnxqcy7x64sn31r-Nero-AI-Image-Upscaler-Photo-Face.webp">
+    <!-- font 4 bio -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"></head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S74ZMJ88EG" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S74ZMJ88EG');
+</script>
+<div id="overlay" class="overlay"></div>
+<div closeoutsidepopup="" class="popup_content_container" id="link_preview_container" style="display: none;">
+    <h1 class="header">Do you want to visit this site?</h1>
+    <div class="input_content">
+        <div class="center">
+            <input type="text" name="alias" class="input" id="link_preview" readonly>
+        </div>
+        <div class="flex">
+            <button class="close-button" onclick="if (!window.__cfRLUnblockHandlers) return false; closePopup('link_preview_container')" data-cf-modified-84be9997a51fe47fc3343b0f-="">Go Back</button>
+            <a class="button_submit" id="link_preview_button" style="width: 100px">Visit Site</a>
+        </div>
+    </div>
+</div>
+<style>
+    * {
+        font-family: 'JetBrains Mono', monospace;        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        box-sizing: border-box;
+                cursor: url("https://r2.zyo.lol/cursor_url_d5fd12c82d4c.png") 16 16, auto !important;
+            }
+    </style>
+<style>
+    .tippy-content {
+                                    font-size: 13px;
+                        }
+</style>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+                    const fontSize = -1;
+                const textElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, .tippy-content');
+    textElements.forEach(el => {
+        const currentSize = window.getComputedStyle(el).fontSize;
+        const newSize = parseFloat(currentSize) + fontSize ?? 0;
+        el.style.fontSize = `${newSize}px`;
+    });
+</script>
+<style>
+    ::selection {
+        background: #ffffff;
+                color: #010101;
+            }
+</style>
+<style>
+    .bio-container {
+                    --iconGlow: drop-shadow(#ffffff 1px 0 7px);
+                --badgeColor: #ffffff;
+                    --badgeGlow: drop-shadow(#ffffff 1px 0 7px);
+                            --audioControlColor: #ffffff ;
+            --audioControlRgba05: rgba(255, 255, 255, 0.5);
+                            --avatarRadius: 50%;
+            }
+</style>
+    <div class="background" id="background" style="background: url(https://i.ibb.co/yGs97X4/chill-4k-aesthetic-art-pxnxqcy7x64sn31r-Nero-AI-Image-Upscaler-Photo-Face.webp)"></div>
+    <audio crossOrigin="anonymous" id="audio"></audio>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function createSlider(sliderId, sliderValueId, unit) {
+        var slider = document.getElementById(sliderId);
+        var sliderInput = document.getElementById(sliderValueId);
+
+        var startValue = sliderInput.value ? Number(sliderInput.value) : 0;
+
+        noUiSlider.create(slider, {
+            start: startValue,
+            connect: [true, false],
+            step: 1,
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: {
+                to: function (value) {
+                    return value + unit;
+                },
+                from: function (value) {
+                    return Number(value.replace(unit, ''));
+                }
+            }
+        });
+
+        let isSliding = false;
+
+        slider.noUiSlider.on('update', function (values, handle) {
+            const valueInt = values[handle];
+            sliderInput.value = valueInt.replace(unit, '');
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/iziToast.min.js" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<!-- <script src="./template/js/nouislider.min.js" type="text/javascript"></script> -->
+<script src="./template/js/typewritter.min.js" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/main.js?v=1.9.3" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/aos.js" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+            once: true,
+            offset: 100,
+        })
+    })
+</script><body class="profile-body-1" style=" background: #ffffff">
+        <div class="overlay_audio" onclick="if (!window.__cfRLUnblockHandlers) return false; hideOverlay()" data-cf-modified-84be9997a51fe47fc3343b0f-="">
+        <p class="text">open</p>
+    </div>
+            <div class="revealAudioLike" style="
+            --audioLikeColor: #ffffff;
+            --audioLikeRgba05: rgba(255, 255, 255, 0.5);
+            --audioLikeRgba02: rgba(255, 255, 255, 0.2);
+        ">
+                    <div class="audio_control" id="audio_control" >
+                <div class="">
+                    <svg class="volumeIcon" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleActive(this);" id="volumeIcon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48" style="cursor: pointer;" data-cf-modified-84be9997a51fe47fc3343b0f-=""><defs><mask id="volumeMedium"><g fill="none" stroke="#fff" stroke-width="4"><path fill="#555" stroke-linejoin="round"d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z" /><path stroke-linecap="round" stroke-linejoin="round"d="M32 15a12 12 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A12 12 0 0 1 32 33" /><path stroke-linecap="round"d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02" /></g></mask></defs><path id="changeMask" fill="currentColor" d="M0 0h48v48H0z" mask="url(#volumeMedium)" /></svg>
+                </div>    
+                <div class="slider-container">
+                    <div id="slider1"></div>
+                    <input type="hidden" name="bgOpacity" id="sliderValue1" value="50" readonly>
+                </div>
+            </div>
+                        <label for="likeButton" class="like_button" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleActive(this);" data-cf-modified-84be9997a51fe47fc3343b0f-="">
+            <input style="display: none;" value="1"  name="likeStatus" type="checkbox" id="likeButton">
+            <svg class="likeIcon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 3a8 8 0 0 0-7 4.13A8 8 0 0 0 9 3a8 8 0 0 0-8 8c0 11 12.857 18 15 18s15-7 15-18a8 8 0 0 0-8-8M9 7c-2.206 0-4 1.794-4 4a1 1 0 0 1-2 0c0-3.309 2.691-6 6-6a1 1 0 0 1 0 2"/></svg>
+        </label>
+            </div>
+        <div class="bio-container" style="
+        --nameColor: #ffffff;
+        --nameColor25: rgba(255, 255, 255, 0.25);
+        --descriptionColor: #ffffff;
+        --backgroundColor: rgba(26, 26, 26, 0);
+        --iconColor: #ffffff;
+        --backgroundBlur: 4px;
+        --nameGlow: 0px 0px 16.5px #ffffff;
+        --descriptionGlow: 0px 0px 16.5px #ffffff;
+        --discordBackground: rgba(26, 26, 26, 0.2);
+        --discordBorder: rgba(26, 26, 26, 0.1);
+        --discordDescription: rgba(255, 255, 255, 0.7);
+                --borderRadius: 25px;
+        --bioWidth: 730px;
+    ">
+        <div class="bio_content_container">
+            <div class="content-container css_content_container reveal">
+                                    <div class="bio_small_infomation">
+                                                <div class="bio_infomation" data-tippy-content="Like">
+                                                            <svg class="likeIcon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 32 32" xml:space="preserve"><path d="M23 3a8 8 0 0 0-7 4.13A8 8 0 0 0 9 3a8 8 0 0 0-8 8c0 11 12.857 18 15 18s15-7 15-18a8 8 0 0 0-8-8M9 7c-2.206 0-4 1.794-4 4a1 1 0 0 1-2 0c0-3.309 2.691-6 6-6a1 1 0 0 1 0 2"></path></svg>
+                                <p class="text" id="likeCount">10,480K</p>
+                                                    </div>
+                        
+                                                <div class="border"></div>
+                        
+                        
+                                                <div class="bio_infomation" data-tippy-content="Profile Views">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg>
+                                <p class="text">20,173K</p>
+                                                    </div>
+                        
+                                                <div class="border"></div>
+                        
+                                                <div class="bio_infomation" data-tippy-content="Location">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.574 21.819a1 1 0 0 1-1.149 0l-.002-.002-.006-.004-.018-.014a10 10 0 0 1-.305-.225A25 25 0 0 1 7.757 18.5C5.964 16.508 4 13.61 4 10.364c0-2.203.831-4.324 2.325-5.896C7.821 2.894 9.861 2 12 2s4.179.894 5.674 2.468C19.17 6.04 20 8.16 20 10.364c0 3.246-1.964 6.144-3.757 8.135a25 25 0 0 1-3.337 3.075 15 15 0 0 1-.305.225l-.018.014-.006.004h-.002zM9 10a3 3 0 1 1 6 0 3 3 0 0 1-6 0"/></svg>
+                            <p class="text">Viet Nam</p>
+                        </div>
+                                            </div>
+                                <div class="content">
+                    <div class="top cardLeft infoColumn">
+                                                <div class="img_container">
+                            <img src="https://i.ibb.co/qMYVRXwZ/Hinh-anh-nen-ac-quy-nam-anime-cuc-chat-2.jpg" alt="" class="img">
+                                                            <img class="img_effect" style="filter: hue-rotate(312deg)" src="./template/img/vuotrong.png">
+                                                    </div>
+                                                <div class="flex-column">
+                            <div class="flex">
+                                                                    <p data-tippy-content='nguyen thanhle' class="header" id="userName">erorr</p>
+                                                                                            </div>
+                                                            <p id="bio_description" class="bio_description">developer</p>
+                                                                                        <div class="svg_container" style="">
+                                                                                                                                                            <a href="https://t.me/kesongandanh" target="_blank" rel="noopener noreferrer" class="svg_item singleColor">
+                                                <svg id="telegramSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="2 3.61 20.02 16.79"><path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path></svg>                                            </a>
+                                                                                                                                                                                                                                        <a href="https://facebook.com/61564830573226" target="_blank" rel="noopener noreferrer" class="svg_item singleColor">
+                                                <svg id="facebookSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="2 2 20 19.95"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"></path></svg>                                            </a>
+                                                                                                                                                                                                                                        <a href="https://github.com/pussyzz" target="_blank" rel="noopener noreferrer" class="svg_item singleColor">
+                                                <svg id="githubSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="Currentcolor" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>                                            </a>
+                                                                                                                                                </div>
+                                                    </div>
+                    </div>
+                                            <div class="flex_discord">
+                                                        <div class="discord_container">
+                                <div class="discord_content reveal">
+                                    <div class="discord_avatar_container">
+                                        <img src="https://i.ibb.co/ycVDn5M6/images-2.jpg" class="discord_avatar">
+                                                                                    <img src=".\template\img\offline.png" class="discord_status">
+                                                                            </div>
+                                    <div class="text_container">
+                                        <div style="width: 0;flex: 1;">
+                                            <div class="discord_tag_flex">
+                                                <span class="discord_name">ah là kid k15</span>
+                                                                                                <div class="discord_tag_container">
+                                                    <img src="https://cdn.discordapp.com/clan-badges/755793441287438469/c2841a2cc61f74da2666405e3cfdf36a" alt="tag" class="tag_img">
+                                                    <p class="tag_text"></p>
+                                                </div>
+                                                                                            </div>
+                                                                                        <span class="discord_description">
+                                                currently idle
+                                            </span>
+                                                                                    </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                </div>
+                                                                                                    <div class="swiper reveal">
+                        <div class="bottom swiper-wrapper" id="swiper-wrapper">
+                                                        <a target="_blank" rel="noopener noreferrer" href="https://pussyzz.github.io/" class="card swiper-slide">
+                                <img src="https://i.ibb.co/JjCQzyc2/result-Screenshot-2026-02-15-00-16-31-56-40deb401b9ffe8e1df2f1cc5ba480b12-1-1.jpg" alt="" class="img">
+                                <div class="bottom-left">
+                                    <p class="header"></p>
+                                    <p class="description">pussyzz.github.io</p>
+                                </div>
+                            </a>
+                                                    </div>
+                    </div>
+                                    </div>
+            </div>
+                            <div class="audio_container css_content_container reveal" style="padding: 15px;">
+                    <div id="audio_avatar_container">
+                                                                                    <img src="1ury.html" alt="Audio Image" class="audio_image">
+                                                                        </div>
+                    <div class="audio_content_container">
+                                                    <h1 class="name" id="musicName"></h1>
+                                                <div class="flex">
+                            <span class="duration" id="currentTime">0:00</span>
+                            <div class="slideTrack" id="slideTrack"></div>
+                            <span style="margin-right: 8px" class="duration" id="totalTime">0:00</span>
+                            <button id="backward">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 51.532 51.532" fill="currentColor" xml:space="preserve"><path d="M6.631 1.963a6.63 6.63 0 0 1 6.631 6.631V23.81a4 4 0 0 1 1-.831l31.27-18.053a3.998 3.998 0 0 1 6 3.464v36.105a4 4 0 0 1-6 3.463l-31.27-18.053a4 4 0 0 1-1-.83v13.863a6.631 6.631 0 0 1-13.262 0V8.594a6.63 6.63 0 0 1 6.631-6.631"/></svg>
+                            </button>
+                            <button id="playPause">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 16h-2V8h2m-4 8H9V8h2m1-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+                            </button>
+                            <button id="forward">
+                                <svg style="transform: rotate(180deg)" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.532 51.532" fill="currentColor" xml:space="preserve"><path d="M6.631 1.963a6.63 6.63 0 0 1 6.631 6.631V23.81a4 4 0 0 1 1-.831l31.27-18.053a3.998 3.998 0 0 1 6 3.464v36.105a4 4 0 0 1-6 3.463l-31.27-18.053a4 4 0 0 1-1-.83v13.863a6.631 6.631 0 0 1-13.262 0V8.594a6.63 6.63 0 0 1 6.631-6.631"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="84be9997a51fe47fc3343b0f-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cdce2004f24b486',t:'MTc3MTA3NTQzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script src="./template/js/popper.min.js?v=1.0.1" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/tippy-bundle.umd.min.js?v=1.0.1" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/cursoreffect.min.js?v=1.0.1" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script src="./template/js/nouislider.min.js?v=1.0.1" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // tooltip
+        tippy('[data-tippy-content]', {
+            theme: 'tooltip_container',
+            arrow: false,
+            allowHTML: true,
+            maxWidth: '92vw',
+            animation: 'scale',
+            delay: [0, 150],
+        });
+    });
+    function copyTextFromParent(parentElement) {
+        const paragraph = parentElement.querySelector('p');
+
+        if (paragraph) {
+            const textToCopy = paragraph.textContent;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+
+            textarea.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(textarea);
+
+            showSuccessPopup('Text copied ' + textToCopy);
+        } else {
+            showErrorPopup('Something went wrong!');
+        }
+    }
+    function revealElements() {
+        const reveals = document.querySelectorAll('.reveal');
+        for (let i = 0; i < reveals.length; i++) {
+            reveals[i].classList.add('active');
+        }
+    }
+    const background = document.getElementById('background');
+            background.innerHTML = `
+            <div class="stars-drop" id="stars-drop-big"></div>
+            <div class="stars-drop2" id="stars-drop-big2"></div>
+            <div class="stars-drop3" id="stars-drop-big3"></div>
+        `
+        createStars('background', 'stars-drop-big', 700, '#ffffff');
+        createStars('background', 'stars-drop-big2', 200, '#ffffff');
+        createStars('background', 'stars-drop-big3', 100, '#ffffff');
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    const swiperWrapper = document.querySelector(".swiper-wrapper");
+    const slideCount = swiperWrapper.children.length;
+
+    const swiper = new Swiper(".swiper", {
+        slidesPerView: slideCount === 1 ? 1 : 2,
+        spaceBetween: 10,
+        centerSlide: 'true',
+        fade: 'true',
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //     dynamicBullets: true,
+        // },
+        breakpoints:{
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: slideCount === 1 ? 1 : 2,
+            },
+        },
+    });
+</script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function adjustChildPosition() {
+        const parent = document.querySelector('.css_content_container');
+        const child = document.querySelector('.bio_small_infomation');
+        const styles = window.getComputedStyle(parent);
+        const borderRadius = parseFloat(styles.borderRadius);
+        const bottom = 12 + 0.16 * (borderRadius - 25);
+        const left = 15 + 0.16 * (borderRadius - 25);
+        child.style.bottom = `${bottom}px`;
+        child.style.left = `${left}px`;
+    }
+    adjustChildPosition();
+</script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function revealAudioLike() {
+        const revealsAudio = document.querySelector('.revealAudioLike');
+        revealsAudio.classList.add('active');
+    }
+    revealAudioLike()
+    
+            const likeButton = document.querySelector('#likeButton');
+        likeButton.addEventListener('change', function() {
+            const likeCount = document.querySelector('#likeCount');
+            let currentCount = likeCount.textContent.replace(/[,.]/g, '');
+            
+            if(this.checked) {
+                likeCount.textContent = formatNumber(parseInt(currentCount) + 1);
+            } else {
+                likeCount.textContent = formatNumber(parseInt(currentCount) - 1);
+            }
+            
+            fetch('./php/bioBE/bio_like', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ value: this.checked ? 1 : null, path: '1ury', userLinkId: '10325' }),
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(responseData) {
+                if (responseData.type == "error") {
+                    showErrPopup(responseData.message);
+                    likeButton.checked = !likeButton.checked;
+                    let currentCount = likeCount.textContent.replace(/[,.]/g, '');
+                    likeCount.textContent = formatNumber(parseInt(currentCount) - 1);
+                } else {
+                    console.warn('Unhandled response type:', responseData.type);
+                }
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+            });
+        });
+
+        function formatNumber(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+    </script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function hideOverlay() {
+        const overlay = document.querySelector('.overlay_audio');
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 300);
+        revealElements();
+                
+                                                                const playlist = [
+                                        { src: "https://files.catbox.moe/up0ccm.mp3", title: "小蘋果", totalDuration:"4:16", audioImage: "https://i.ibb.co/F4qZrt00/images-1.jpg" },
+                                    ];
+                                    function shuffle(array) {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]];
+                        }
+                    }
+                    shuffle(playlist);
+                                let currentTrackIndex = 0;
+                function playTrack(index) {
+                    if (index >= 0 && index < playlist.length) {
+                        currentTrackIndex = index;
+                        audio.src = playlist[index].src;
+                        audio.play();
+                                                    const musicName = document.getElementById('musicName');
+                            const totalTimeDisplay = document.getElementById('totalTime');
+                            const audioAvatarContainer = document.getElementById('audio_avatar_container');
+                            if(playlist[index].audioImage){
+                                audioAvatarContainer.innerHTML = 
+                                `
+                                    <img src="https://i.ibb.co/F4qZrt00/images-1.jpg" alt="Audio Image" class="audio_image">
+                                `
+                            } else {
+                                audioAvatarContainer.innerHTML = 
+                                `
+                                    <svg class="audio_image_svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                        <path id="ignore" d="M406.3 48.2c-4.7.9-202 39.2-206.2 40-4.2.8-8.1 3.6-8.1 8v240.1c0 1.6-.1 7.2-2.4 11.7-3.1 5.9-8.5 10.2-16.1 12.7-3.3 1.1-7.8 2.1-13.1 3.3-24.1 5.4-64.4 14.6-64.4 51.8 0 31.1 22.4 45.1 41.7 47.5 2.1.3 4.5.7 7.1.7 6.7 0 36-3.3 51.2-13.2 11-7.2 24.1-21.4 24.1-47.8V190.5c0-3.8 2.7-7.1 6.4-7.8l152-30.7c5-1 9.6 2.8 9.6 7.8v130.9c0 4.1-.2 8.9-2.5 13.4-3.1 5.9-8.5 10.2-16.2 12.7-3.3 1.1-8.8 2.1-14.1 3.3-24.1 5.4-64.4 14.5-64.4 51.7 0 33.7 25.4 47.2 41.8 48.3 6.5.4 11.2.3 19.4-.9s23.5-5.5 36.5-13c17.9-10.3 27.5-26.8 27.5-48.2V55.9c-.1-4.4-3.8-8.9-9.8-7.7z" fill="currentColor"></path>
+                                    </svg>
+                                `
+                            }
+                            musicName.textContent = playlist[index].title;
+                            totalTimeDisplay.textContent = playlist[index].totalDuration;
+                                            }
+                }
+                playTrack(currentTrackIndex);
+                audio.addEventListener("ended", () => {
+                    if (currentTrackIndex + 1 < playlist.length) {
+                        playTrack(currentTrackIndex + 1);
+                    } else {
+                        playTrack(0);
+                    }
+                });
+                                    const backwardButton = document.getElementById("backward");
+                    const forwardButton = document.getElementById("forward");
+                    backwardButton.addEventListener("click", () => {
+                        if (playlist.length > 1) {
+                            if (currentTrackIndex - 1 >= 0) {
+                                playTrack(currentTrackIndex - 1);
+                            } else {
+                                playTrack(playlist.length - 1);
+                            }
+                        }
+                    });
+
+                    forwardButton.addEventListener("click", () => {
+                        if (playlist.length > 1) {
+                            if (currentTrackIndex + 1 < playlist.length) {
+                                playTrack(currentTrackIndex + 1);
+                            } else {
+                                playTrack(0);
+                            }
+                        }
+                    });
+                                                        const playPauseButton = document.getElementById("playPause");
+                const currentTimeDisplay = document.getElementById("currentTime");
+                const totalTimeDisplay = document.getElementById("totalTime");
+                function audioTrackSilder(sliderId) {
+                    var slider = document.getElementById(sliderId);
+
+                    noUiSlider.create(slider, {
+                        start: 0,
+                        connect: [true, false],
+                        step: 0.1,
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: {
+                            to: function (value) {
+                                return value;
+                            },
+                            from: function (value) {
+                                return Number(value);
+                            }
+                        }
+                    });
+
+                    let isProgrammaticUpdate = false;
+
+                    slider.noUiSlider.on('update', function (values, handle) {
+                        if (isProgrammaticUpdate) {
+                            return;
+                        }
+                        const valueInt = values[handle];
+                        const seekTime = (valueInt / 100) * (audio.duration || 0);
+                        audio.currentTime = seekTime;
+                    });
+
+                    return {
+                        instance: slider.noUiSlider,
+                        set(value) {
+                            isProgrammaticUpdate = true;
+                            slider.noUiSlider.set(value);
+                            isProgrammaticUpdate = false;
+                        }
+                    };
+                }
+                const sliderInstance = audioTrackSilder('slideTrack');
+                function formatTime(seconds) {
+                    const mins = Math.floor(seconds / 60);
+                    const secs = Math.floor(seconds % 60);
+                    return `${mins}:${secs < 10 ? "0" + secs : secs}`;
+                }
+                function updateTrack() {
+                    sliderInstance.set((audio.currentTime / audio.duration) * 100 || 0);
+                    currentTimeDisplay.textContent = formatTime(audio.currentTime);
+                }
+                playPauseButton.addEventListener("click", () => {
+                    if (audio.paused) {
+                        audio.play();
+                        playPauseButton.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 16h-2V8h2m-4 8H9V8h2m1-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+                        `;
+                    } else {
+                        audio.pause();
+                        playPauseButton.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 16.5v-9l6 4.5M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+                        `
+                    }
+                });
+                document.addEventListener("keydown", (e) => {
+                    if (e.code === "Space") {
+                        playPauseButton.click();
+                    }
+                });
+                document.addEventListener("keydown", (e) => {
+                    if (e.code === "ArrowLeft") {
+                        audio.currentTime -= 5;
+                    }
+                });
+                document.addEventListener("keydown", (e) => {
+                    if (e.code === "ArrowRight") {
+                        audio.currentTime += 5;
+                    }
+                });
+             totalTimeDisplay.textContent = '4:30';
+                                audio.addEventListener("timeupdate", updateTrack);
+                                        createSlider('slider1', 'sliderValue1', '');
+            // get gia tri de cho viec pause va set value
+            const slider = document.getElementById('slider1').noUiSlider;
+            const inputValue = document.getElementById('sliderValue1');
+            const svgVolumn = document.getElementById("volumeIcon");
+            const mask = svgVolumn.querySelector('#changeMask');
+            const defs = svgVolumn.querySelector("defs");
+            // xu li thanh volumn slider
+            slider.on('update', function (values, handle) {
+                const volumeValue = parseFloat(values[handle]);
+
+                audio.volume = volumeValue / 100;
+
+                if (volumeValue === 0) {
+                    audio.pause();
+                    defs.innerHTML = `
+                    <mask id="volumeMute"><mask id="volumeMute1" width="13" height="13" x="30" y="18" maskUnits="userSpaceOnUse" style="mask-type: alpha;"><path d="M30 18h13v13H30z"/></mask><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><g stroke-linecap="round" mask="url(#volumeMute1)"><path d="m40.735 20.286l-8.486 8.485m.001-8.485l8.485 8.485"/></g><path fill="#555" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"/></g></mask>
+                    `;
+                    mask.setAttribute("mask", "url(#volumeMute)");
+                } else {
+                    audio.play().catch(error => {
+                    });
+                    defs.innerHTML = `
+                    <mask id="volumeMedium"><g fill="none" stroke="#fff" stroke-width="4"><path fill="#555" stroke-linejoin="round" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M32 15a12 12 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A12 12 0 0 1 32 33"/><path stroke-linecap="round" d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02"/></g></mask>
+                    `;
+                    mask.setAttribute("mask", "url(#volumeMedium)");
+                }
+            });
+            // xu li audio pause va play
+            let previousSliderValue = 100;
+            svgVolumn.addEventListener("click", function () {
+                if (inputValue.value == 0) {
+                    slider.set(previousSliderValue);
+                    inputValue.value = previousSliderValue;
+
+                    defs.innerHTML = `
+                    <mask id="volumeMedium"><g fill="none" stroke="#fff" stroke-width="4"><path fill="#555" stroke-linejoin="round" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M32 15a12 12 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A12 12 0 0 1 32 33"/><path stroke-linecap="round" d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02"/></g></mask>
+                    `;
+                    mask.setAttribute("mask", "url(#volumeMedium)");
+                } else {
+                    previousSliderValue = parseFloat(inputValue.value);
+
+                    inputValue.value = '0';
+                    slider.set(0);
+
+                    defs.innerHTML = `
+                    <mask id="volumeMute"><mask id="volumeMute1" width="13" height="13" x="30" y="18" maskUnits="userSpaceOnUse" style="mask-type: alpha;"><path d="M30 18h13v13H30z"/></mask><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><g stroke-linecap="round" mask="url(#volumeMute1)"><path d="m40.735 20.286l-8.486 8.485m.001-8.485l8.485 8.485"/></g><path fill="#555" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"/></g></mask>
+                    `;
+                    mask.setAttribute("mask", "url(#volumeMute)");
+                }
+            });
+            }
+    audio.volume = 0.5;
+</script><script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function snowflakeCursor(color, options) {
+        let hasWrapperEl = options && options.element;
+        let element = hasWrapperEl || document.body;
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let cursor = { x: width / 2, y: height / 2 };
+        let particles = [];
+        let canvas, context, animationFrame;
+
+        let canvImages = [];
+
+        const prefersReducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        );
+
+        prefersReducedMotion.onchange = () => {
+            if (prefersReducedMotion.matches) {
+                destroy();
+            } else {
+                init();
+            }
+        };
+
+        function init() {
+            if (prefersReducedMotion.matches) {
+                console.log(
+                    "This browser has prefers reduced motion turned on, so the cursor did not init"
+                );
+                return false;
+            }
+
+            canvas = document.createElement("canvas");
+            context = canvas.getContext("2d");
+
+            canvas.style.top = "0px";
+            canvas.style.left = "0px";
+            canvas.style.pointerEvents = "none";
+
+            if (hasWrapperEl) {
+                canvas.style.position = "absolute";
+                element.appendChild(canvas);
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.style.position = "fixed";
+                document.body.appendChild(canvas);
+                canvas.width = width;
+                canvas.height = height;
+            }
+
+            const svgIcons = [
+                `
+                <svg class="effect_snow_fake" width="1em" height="1em" fill="${color}" viewBox="0 0 50 50" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" overflow="inherit"><path d="M23 47.689v-6.342l-3.357 1.992L18 42.305v-2.229l5-2.986v-4.168l-4 2.451v-4.416l-4 2.094v5.99l-1.653 1.23L12 39.16v-4.012L6.426 38.27 4 37.271v-2.529l5.685-3.17L6 29.75v-2.32l2.123-1.127 5.214 3.068 3.612-2.084-.082-.065-3.665-2.123 3.568-2.228-3.577-2.083L7.98 23.84 6 22.871v-2.307l3.542-1.978L4 15.533v-2.529l2.321-1.114L12 15.087v-4.076l1.485-1.127 1.943 1.18-.056 6.105 3.673 2.122.033-4.311L23 17.079v-4.167l-5-2.988V7.71l1.643-1.05L23 8.652V2.324L24.994 1 27 2.324v6.328l3.906-2.031L33 7.84v1.992l-6 3.08v4.167l4-2.267v4.534l4-2.084v-6.524l1.455-.866 1.545.865v4.167l5.842-3.08L46 13.042v2.359l-5.495 3.17L44 20.525v2.254l-1.83.996-5.327-3.158-3.679 2.346 3.549 2.228-3.659 2.122 3.772 1.992 5.389-2.986L44 27.535v2.15l-3.32 1.887 5.32 3.17v2.49l-2.522 1.037L38 35.281v3.955l-1.52 1.049L35 39.236v-6.002l-4-2.213v4.168l-4-2.268v4.168l5 2.986v2.359l-1.647.904L27 41.348v6.342L24.994 49zm-1.466-22.597L23.42 28h3.514l1.613-2.908L26.843 22h-3.514z"/></svg>
+                `,
+            ];
+
+            svgIcons.forEach((svgString) => {
+                let img = createImageFromSVG(svgString);
+                canvImages.push(img);
+            });
+
+            bindEvents();
+            loop();
+        }
+
+        function createImageFromSVG(svgString) {
+            const blob = new Blob([svgString], { type: "image/svg+xml" });
+            const url = URL.createObjectURL(blob);
+
+            const img = new Image();
+            img.onload = () => URL.revokeObjectURL(url);
+            img.src = url;
+
+            return img;
+        }
+
+        function bindEvents() {
+            element.addEventListener("mousemove", onMouseMove);
+            element.addEventListener("touchmove", onTouchMove, { passive: true });
+            element.addEventListener("touchstart", onTouchMove, { passive: true });
+            window.addEventListener("resize", onWindowResize);
+        }
+
+        function onWindowResize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            if (hasWrapperEl) {
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.width = width;
+                canvas.height = height;
+            }
+        }
+
+        function onTouchMove(e) {
+            if (e.touches.length > 0) {
+                for (let i = 0; i < e.touches.length; i++) {
+                    addParticle(
+                        e.touches[i].clientX,
+                        e.touches[i].clientY,
+                        canvImages[Math.floor(Math.random() * canvImages.length)]
+                    );
+                }
+            }
+        }
+
+        function onMouseMove(e) {
+            if (hasWrapperEl) {
+                const boundingRect = element.getBoundingClientRect();
+                cursor.x = e.clientX - boundingRect.left;
+                cursor.y = e.clientY - boundingRect.top;
+            } else {
+                cursor.x = e.clientX;
+                cursor.y = e.clientY;
+            }
+            if (Math.random() < 0.675) {
+                addParticle(
+                    cursor.x,
+                    cursor.y,
+                    canvImages[Math.floor(Math.random() * canvImages.length)]
+                );
+            }
+        }
+
+        function addParticle(x, y, img) {
+            particles.push(new Particle(x, y, img));
+        }   
+
+        function updateParticles() {
+            if (particles.length === 0) {
+                return;
+            }
+
+            context.clearRect(0, 0, width, height);
+
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update(context);
+            }
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                if (particles[i].lifeSpan < 0) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            if (particles.length === 0) {
+                context.clearRect(0, 0, width, height);
+            }
+        }
+
+        function loop() {
+            updateParticles();
+            animationFrame = requestAnimationFrame(loop);
+        }
+
+        function destroy() {
+            canvas.remove();
+            cancelAnimationFrame(animationFrame);
+            element.removeEventListener("mousemove", onMouseMove);
+            element.removeEventListener("touchmove", onTouchMove);
+            element.removeEventListener("touchstart", onTouchMove);
+            window.removeEventListener("resize", onWindowResize);
+        }
+
+        function Particle(x, y, canvasItem) {
+            const lifeSpan = Math.floor(Math.random() * 60 + 80);
+            this.initialLifeSpan = lifeSpan;
+            this.lifeSpan = lifeSpan;
+            this.velocity = {
+                x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+                y: 1 + Math.random(),
+            };
+            this.position = { x: x, y: y };
+            this.canv = canvasItem;
+
+            this.update = function (context) {
+                this.position.x += this.velocity.x;
+                this.position.y += this.velocity.y;
+                this.lifeSpan--;
+
+                this.velocity.x += ((Math.random() < 0.5 ? -1 : 1) * 2) / 75;
+                this.velocity.y -= Math.random() / 300;
+
+                const scale = Math.max(this.lifeSpan / this.initialLifeSpan, 0);
+
+                const degrees = 2 * this.lifeSpan;
+                const radians = degrees * 0.0174533;
+
+                context.translate(this.position.x, this.position.y);
+                context.rotate(radians);
+
+                context.drawImage(
+                    this.canv,
+                    (-this.canv.width / 2) * scale,
+                    -this.canv.height / 2,
+                    this.canv.width * scale,
+                    this.canv.height * scale
+                );
+
+                context.rotate(-radians);
+                context.translate(-this.position.x, -this.position.y);
+            };
+        }
+
+        init();
+
+        return {
+            destroy: destroy,
+        };
+    }
+
+    function sparkingEffect(color = '#ffffff'){
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d", {
+            alpha: true
+        });
+        document.body.appendChild(canvas);
+        Object.assign(canvas.style, {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            pointerEvents: "none",
+            zIndex: 500
+        });
+        
+        const dpr = window.devicePixelRatio || 1;
+        let width = innerWidth,
+            height = innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+        
+        window.addEventListener("resize", () => {
+            width = innerWidth;
+            height = innerHeight;
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            ctx.scale(dpr, dpr);
+        });
+        const stars = [];
+        const maxStars = 500;
+        
+        class Star {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = 1 + Math.random() * 1.2;
+                this.life = 500 + Math.random() * 400;
+                this.birth = performance.now();
+                this.vx = (Math.random() - 0.5) * 0.6;
+                this.vy = (Math.random() - 0.5) * 0.4;
+            }
+            draw(now) {
+                const age = now - this.birth;
+                const alpha = 1 - age / this.life;
+                if (alpha <= 0) return false;
+                this.x += this.vx;
+                this.y += this.vy;
+                ctx.globalAlpha = alpha;
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                return true;
+            }
+        }
+        
+        function loop(now) {
+            ctx.clearRect(0, 0, width, height);
+            for (let i = stars.length - 1; i >= 0; i--) {
+                if (!stars[i].draw(now)) stars.splice(i, 1);
+            }
+            requestAnimationFrame(loop);
+        }
+        requestAnimationFrame(loop);
+        document.addEventListener("mousemove", (e) => {
+            for (let i = 0; i < 1; i++) {
+                if (stars.length > maxStars) stars.shift();
+                stars.push(new Star(e.clientX, e.clientY));
+            }
+        });
+    }
+    
+
+    function trailingCursor(options) {
+        let hasWrapperEl = options && options.element;
+        let element = hasWrapperEl || document.body;
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let cursor = { x: width / 2, y: width / 2 };
+        let particles = [];
+        let canvas, context, animationFrame;
+
+        const totalParticles = options?.particles || 20;
+        const rate = options?.rate || 0.5;
+        const baseImageSrc = options?.baseImageSrc || "https://r2.zyo.lol/cursor_url_d5fd12c82d4c.png";
+        let cursorsInitted = false;
+
+        let baseImage = new Image();
+        baseImage.src = baseImageSrc;
+
+        const prefersReducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        );
+
+        prefersReducedMotion.onchange = () => {
+            if (prefersReducedMotion.matches) {
+                destroy();
+            } else {
+                init();
+            }
+        };
+
+        function init() {
+            if (prefersReducedMotion.matches) {
+                console.log(
+                    "This browser has prefers reduced motion turned on, so the cursor did not init"
+                );
+                return false;
+            }
+
+            canvas = document.createElement("canvas");
+            context = canvas.getContext("2d");
+            canvas.style.top = "0px";
+            canvas.style.left = "0px";
+            canvas.style.pointerEvents = "none";
+
+            if (hasWrapperEl) {
+                canvas.style.position = "absolute";
+                element.appendChild(canvas);
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.style.position = "fixed";
+                document.body.appendChild(canvas);
+                canvas.width = width;
+                canvas.height = height;
+            }
+
+            bindEvents();
+            loop();
+        }
+
+        function bindEvents() {
+            element.addEventListener("mousemove", onMouseMove);
+            window.addEventListener("resize", onWindowResize);
+        }
+
+        function onWindowResize(e) {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            if (hasWrapperEl) {
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.width = width;
+                canvas.height = height;
+            }
+        }
+
+        function onMouseMove(e) {
+            if (hasWrapperEl) {
+                const boundingRect = element.getBoundingClientRect();
+                cursor.x = e.clientX - boundingRect.left;
+                cursor.y = e.clientY - boundingRect.top;
+            } else {
+                cursor.x = e.clientX;
+                cursor.y = e.clientY;
+            }
+
+            if (cursorsInitted === false) {
+                cursorsInitted = true;
+                for (let i = 0; i < totalParticles; i++) {
+                    addParticle(cursor.x, cursor.y, baseImage);
+                }
+            }
+        }
+
+        function addParticle(x, y, image) {
+            particles.push(new Particle(x, y, image));
+        }
+
+        function updateParticles() {
+            context.clearRect(0, 0, width, height);
+
+            let x = cursor.x;
+            let y = cursor.y;
+
+            particles.forEach(function (particle, index, particles) {
+                let nextParticle = particles[index + 1] || particles[0];
+
+                particle.position.x = x;
+                particle.position.y = y;
+                particle.move(context);
+                x += (nextParticle.position.x - particle.position.x) * rate;
+                y += (nextParticle.position.y - particle.position.y) * rate;
+            });
+        }
+
+        function loop() {
+            updateParticles();
+            animationFrame = requestAnimationFrame(loop);
+        }
+
+        function destroy() {
+            canvas.remove();
+            cancelAnimationFrame(animationFrame);
+            element.removeEventListener("mousemove", onMouseMove);
+            window.addEventListener("resize", onWindowResize);
+        };
+        function Particle(x, y, image) {
+            this.position = { x: x, y: y };
+            this.image = image;
+
+            this.move = function (context) {
+                context.drawImage(
+                    this.image,
+                    this.position.x,
+                    this.position.y 
+                );
+            };
+        }
+
+        init();
+
+        return {
+            destroy: destroy
+        }
+    }
+    function ghostCursor(options) {
+        let hasWrapperEl = options && options.element;
+        let element = hasWrapperEl || document.body;
+
+        let randomDelay = options && options.randomDelay;
+        let minDelay = options && options.minDelay || 5;
+        let maxDelay = options && options.maxDelay || 50;
+        const lifeSpan = options && options.lifeSpan || 40;
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let cursor = { x: width / 2, y: width / 2 };
+        let particles = [];
+        let canvas, context, animationFrame;
+
+        let baseImage = new Image();
+        if (options && options.image) {
+            baseImage.src = options.image;
+        } else {
+            baseImage.src =
+                "https://r2.zyo.lol/cursor_url_d5fd12c82d4c.png";
+        }
+
+        const prefersReducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        );
+
+        prefersReducedMotion.onchange = () => {
+            if (prefersReducedMotion.matches) {
+                destroy();
+            } else {
+                init();
+            }
+        };
+
+        function init() {
+            if (prefersReducedMotion.matches) {
+                console.log(
+                    "This browser has prefers reduced motion turned on, so the cursor did not init"
+                );
+                return false;
+            }
+
+            canvas = document.createElement("canvas");
+            context = canvas.getContext("2d");
+            canvas.style.top = "0px";
+            canvas.style.left = "0px";
+            canvas.style.pointerEvents = "none";
+
+            if (hasWrapperEl) {
+                canvas.style.position = "absolute";
+                element.appendChild(canvas);
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.style.position = "fixed";
+                document.body.appendChild(canvas);
+                canvas.width = width;
+                canvas.height = height;
+            }
+
+            bindEvents();
+            loop();
+        }
+
+        function bindEvents() {
+            element.addEventListener("mousemove", onMouseMove);
+            element.addEventListener("touchmove", onTouchMove, { passive: true });
+            element.addEventListener("touchstart", onTouchMove, { passive: true });
+            window.addEventListener("resize", onWindowResize);
+        }
+
+        function onWindowResize(e) {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            if (hasWrapperEl) {
+                canvas.width = element.clientWidth;
+                canvas.height = element.clientHeight;
+            } else {
+                canvas.width = width;
+                canvas.height = height;
+            }
+        }
+
+        function onTouchMove(e) {
+            if (e.touches.length > 0) {
+                for (let i = 0; i < e.touches.length; i++) {
+                    addParticle(e.touches[i].clientX, e.touches[i].clientY, baseImage);
+                }
+            }
+        }
+
+        let getDelay = () => Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
+        let lastTimeParticleAdded = Date.now(),
+            interval = getDelay();
+
+        function onMouseMove(e) {
+            if (randomDelay) {
+                if (lastTimeParticleAdded + interval > Date.now()) return;
+                lastTimeParticleAdded = Date.now();
+                interval = getDelay();
+            }
+
+            if (hasWrapperEl) {
+                const boundingRect = element.getBoundingClientRect();
+                cursor.x = e.clientX - boundingRect.left;
+                cursor.y = e.clientY - boundingRect.top;
+            } else {
+                cursor.x = e.clientX;
+                cursor.y = e.clientY;
+            }
+
+            addParticle(cursor.x, cursor.y, baseImage);
+        }
+
+        function addParticle(x, y, image) {
+            particles.push(new Particle(x, y, image));
+        }
+
+        function updateParticles() {
+            if (particles.length == 0) {
+                return;
+            }
+
+            context.clearRect(0, 0, width, height);
+
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update(context);
+            }
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                if (particles[i].lifeSpan < 0) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            if (particles.length == 0) {
+                context.clearRect(0, 0, width, height);
+            }
+        }
+
+        function loop() {
+            updateParticles();
+            animationFrame = requestAnimationFrame(loop);
+        }
+
+        function destroy() {
+            canvas.remove();
+            cancelAnimationFrame(animationFrame);
+            element.removeEventListener("mousemove", onMouseMove);
+            element.removeEventListener("touchmove", onTouchMove);
+            element.removeEventListener("touchstart", onTouchMove);
+            window.addEventListener("resize", onWindowResize);
+        };
+
+        /**
+         * Particles
+         */
+                    function Particle(x, y, image) {
+                this.initialLifeSpan = lifeSpan; // ms
+                this.lifeSpan = lifeSpan; // ms
+                this.position = { x: x, y: y };
+
+                this.image = image;
+
+                this.update = function (context) {
+                    this.lifeSpan--;
+                    const opacity = Math.max(this.lifeSpan / this.initialLifeSpan, 0);
+
+                    // Tính toán để căn giữa hình ảnh
+                    const imageWidth = this.image.width || 16; // Chiều rộng mặc định nếu không xác định
+                    const imageHeight = this.image.height || 16; // Chiều cao mặc định nếu không xác định
+
+                    context.globalAlpha = opacity;
+                    context.drawImage(
+                        this.image,
+                        this.position.x - imageWidth / 2, // Căn giữa theo chiều ngang
+                        this.position.y - imageHeight / 2 // Căn giữa theo chiều dọc
+                    );
+                };
+            }
+        
+        init();
+
+        return {
+            destroy: destroy
+        }
+    }
+</script><script defer type="84be9997a51fe47fc3343b0f-text/javascript">
+            document.querySelector('.overlay_audio').addEventListener('click', function(){
+            fetch('https://zyo.lol/php/api/view_count', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Timestamp': '1771075436',
+                    'X-Sign': 'b78108630919b394b77392cb8f3587d71ff1d157cbaf9718d864d743325c088b',
+                },
+                body: JSON.stringify({ 
+                    user_id: 10325, 
+                    user_view: 0, 
+                    referrer: '' 
+                }),
+            })
+        });
+    </script>
+<style>
+    .text_effect_5 {
+        color: #f8f8f8;
+        background: linear-gradient(90deg, transparent, var(---nameColor), transparent);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine_effect 2s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: var(--nameColor25);
+        background-clip: text;
+    }
+    /* shine */
+    .text_effect_3 {
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, var(--nameColor), var(--nameColor), #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine_effect 2s linear infinite;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    }
+</style>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    </script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    const titleText = "@ntle";
+    document.title = titleText;
+</script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    function openPopupPreview(link){
+        const linkPreview = document.getElementById('link_preview');
+        const linkPreviewButton = document.getElementById('link_preview_button');
+        linkPreview.value = link
+        linkPreviewButton.href = link
+        linkPreviewButton.target = '_blank'
+        linkPreviewButton.rel = 'noopener noreferrer'
+        openPopup('link_preview_container');
+    }
+</script>
+<script src="./template/js/text-effect.js?v=1.0.4" type="84be9997a51fe47fc3343b0f-text/javascript"></script>
+<script type="84be9997a51fe47fc3343b0f-text/javascript">
+    var userName = document.getElementById('userName');
+        </script>
+<!--  -->
