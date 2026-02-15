@@ -44,7 +44,7 @@
 
 <!-- ================= TOP LANGUAGE ================= -->
 <p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pussyzz&layout=compact&theme=tokyonight&hide_border=true"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pussyzz&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400"/>
 </p>
 
 ---
