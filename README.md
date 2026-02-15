@@ -42,27 +42,6 @@
 
 ---
 
-<!-- ================= TOP LANGUAGE ================= -->
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pussyzz&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400"/>
-</p>
-
----
-
-<!-- ================= ACTIVITY GRAPH ================= -->
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=pussyzz&theme=tokyo-night&hide_border=true"/>
-</p>
-
----
-
-<!-- ================= TROPHY ================= -->
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=pussyzz&theme=tokyonight&no-frame=true&row=1&column=6"/>
-</p>
-
----
-
 <!-- ================= TERMINAL STYLE ================= -->
 <h3 align="center">💻 About Me</h3>
 
